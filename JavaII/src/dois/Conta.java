@@ -1,9 +1,9 @@
 package dois;
 
-public class Conta {
+public abstract class Conta {
 
-	private double saldo;
-	private String descricao;
+	protected double saldo;
+	protected String descricao;
 
 	public double getSaldo() {
 		return this.saldo;
@@ -17,9 +17,7 @@ public class Conta {
 		this.saldo -= valor;
 	}
 
-	public void atualiza(double taxa) {
-		this.saldo += this.saldo * taxa;
-	}
+	public abstract void atualiza(double taxa);
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
