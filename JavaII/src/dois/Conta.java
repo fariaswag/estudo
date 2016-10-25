@@ -1,5 +1,7 @@
 package dois;
 
+import excecoes.ValorInvalidoException;
+
 public abstract class Conta {
 
 	protected double saldo;
@@ -10,6 +12,9 @@ public abstract class Conta {
 	}
 
 	public void deposita(double valor) {
+		if (valor < 0) {
+			throw new ValorInvalidoException(saldo);
+		}
 		this.saldo += valor;
 	}
 
