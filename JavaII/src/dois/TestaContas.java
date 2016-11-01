@@ -1,19 +1,30 @@
 package dois;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+
 public class TestaContas {
 
 	public static void main(String[] args) {
-		ContaCorrente cc = new ContaCorrente();
-		ContaPoupanca cp = new ContaPoupanca();
 
-		cc.deposita(1000);
-		cp.deposita(1000);
+		List<ContaPoupanca> contas = new LinkedList<>();
 
-		cc.atualiza(0.01);
-		cp.atualiza(0.01);
+		Random random = new Random();
+		for (int i = 0; i < 10; i++) {
+			contas.add(new ContaPoupanca(random.nextInt(100), random.nextDouble(), new String("CLiente" + i)));
+		}
 
-		System.out.println(cc.getSaldo());
-		System.out.println(cp.getSaldo());
+		Collections.sort(contas);
+		System.out.println(contas);
+		Collections.reverse(contas);
+		System.out.println("Reverse = " + contas);
+		Collections.shuffle(contas);
+		System.out.println("Embaralhar = " + contas);
+		Collections.rotate(contas, 1);
+		System.out.println("Rotacionando em 1  = " + contas);
 
 	}
 }
