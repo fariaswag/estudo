@@ -1,13 +1,17 @@
 package teste;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 import modelo.Orcamento;
-import modelo.implementacao.ICCC;
+import modelo.implementacao.imposto.ICCC;
 import negocio.CalculadoraDeImpostos;
 
 public class TesteCalculadora {
 
-	public static void main(String[] args) {
+	@Test
+	public void testItCCC() {
 
-		new CalculadoraDeImpostos().calcula(new Orcamento(500), new ICCC());
+		Assert.assertTrue(25 == new CalculadoraDeImpostos().calcula(new Orcamento(500), new ICCC()));
 	}
 }

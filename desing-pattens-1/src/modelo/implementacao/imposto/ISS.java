@@ -1,14 +1,14 @@
-package modelo.implementacao;
+package modelo.implementacao.imposto;
 
 import interfaces.IImposto;
 import modelo.Orcamento;
 
-public class ICMS implements IImposto {
+public class ISS implements IImposto {
 
 	@Override
 	public double calcula(Orcamento o) {
 
-		return o.getValor() * 0.05 + 50;
+		return o.getValor() * 0.06;
 	}
 
 }

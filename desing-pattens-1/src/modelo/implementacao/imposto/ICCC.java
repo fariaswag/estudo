@@ -1,4 +1,4 @@
-package modelo.implementacao;
+package modelo.implementacao.imposto;
 
 import interfaces.IImposto;
 import modelo.Orcamento;

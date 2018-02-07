@@ -5,8 +5,8 @@ import modelo.Orcamento;
 
 public class CalculadoraDeImpostos {
 
-	public void calcula(Orcamento orcamento, IImposto imposto) {
+	public double calcula(Orcamento orcamento, IImposto imposto) {
 
-		System.out.println(imposto.calcula(orcamento));
+		return imposto.calcula(orcamento);
 	}
 }
