@@ -1,10 +1,8 @@
 package teste;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
 
 import interfaces.IDesconto;
 import modelo.Item;
