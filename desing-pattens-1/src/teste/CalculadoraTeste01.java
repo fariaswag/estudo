@@ -7,7 +7,7 @@ import modelo.Orcamento;
 import modelo.implementacao.imposto.ICCC;
 import negocio.CalculadoraDeImpostos;
 
-public class TesteCalculadora {
+public class CalculadoraTeste01 {
 
 	@Test
 	public void testItCCC() {
