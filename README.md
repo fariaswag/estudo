@@ -1,3 +1,2 @@
 # estudo ...
 
-Apenas algumas coisas que estudei ou estou estudando
